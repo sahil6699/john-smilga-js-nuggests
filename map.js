@@ -27,7 +27,5 @@ const people = [
 // uses values from original array when making new one
 // if we don't want to return the values we get from the original array, we still have access them i.e we can return anything from the  map method but the size of the array will remain the same
 
-const ages = people.map((person) => {
-  return person.age;
-});
+const ages = people.map((person) => person.age);
 console.log(ages);
