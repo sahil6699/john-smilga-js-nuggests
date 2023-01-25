@@ -26,6 +26,6 @@ const people = [
 // does't change the size of array (unlike filter)
 // uses values from original array when making new one
 // if we don't want to return the values we get from the original array, we still have access them i.e we can return anything from the  map method but the size of the array will remain the same
-
-const ages = people.map((person) => person.age);
+const getAges = (person) => person.age;
+const ages = people.map(getAges);
 console.log(ages);
