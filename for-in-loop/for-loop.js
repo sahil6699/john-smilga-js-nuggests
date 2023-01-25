@@ -11,4 +11,6 @@ const object = {
 // it also iterate over the the values of the object by using the following syntax: object[objectProperty]
 for (let objectProperty in object) {
   console.log(`${objectProperty}: ${object[objectProperty]}`);
+  console.log(`${object.objectProperty}`); //this will be undefined why?
+  // ! doubt: the above one will be undefined why
 }
