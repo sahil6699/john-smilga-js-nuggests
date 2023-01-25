@@ -14,3 +14,10 @@ for (let objectProperty in object) {
   console.log(`${object.objectProperty}`); //this will be undefined why?
   // ! doubt: the above one will be undefined why
 }
+
+let arr = ['sahil', 'hemang', 'nikhil'];
+// not advised to use over arrays especially if the order is important
+// user for of loop instead for arrays
+for (let index in arr) {
+  console.log(arr[index], index);
+}
