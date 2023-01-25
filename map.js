@@ -38,3 +38,8 @@ const newPeople = people.map((item) => {
 });
 
 console.log(newPeople);
+
+const names = people.map((person) => `<h2>${person.name}</h2>`);
+console.log(names);
+const result = document.querySelector('#result');
+result.innerHTML = names.join('');
